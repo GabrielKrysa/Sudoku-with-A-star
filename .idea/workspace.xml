@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c92a9ca-ca33-4eee-adc9-24b00b8c0f0e" name="Default Changelist" comment="" />
+    <list default="true" id="8c92a9ca-ca33-4eee-adc9-24b00b8c0f0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sudoku_A-star/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sudoku_A-star/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sudoku_A-star/main/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sudoku_A-star/main/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Node.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="390">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -26,11 +33,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="335">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#testaQuadrante#0;class#Node#0" />
+                <element signature="method#printCaminho#0;class#Node#0" />
+                <element signature="method#testeQuadrante#0;class#Node#0" />
                 <element signature="method#testeColuna#0;class#Node#0" />
                 <element signature="method#testeLinha#0;class#Node#0" />
                 <element signature="method#adicionaElemento#0;class#Node#0" />
@@ -55,14 +62,14 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Jogo dos 8 (A-star)" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/Node.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Node.java" />
       </list>
     </option>
   </component>
@@ -84,16 +91,16 @@
           <expand>
             <path>
               <item name="Sudoku_A-star" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SUDOKU A-STAR" type="462c0819:PsiDirectoryNode" />
+              <item name="Sudoku-with-A-star-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sudoku_A-star" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SUDOKU A-STAR" type="462c0819:PsiDirectoryNode" />
+              <item name="Sudoku-with-A-star-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sudoku_A-star" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SUDOKU A-STAR" type="462c0819:PsiDirectoryNode" />
+              <item name="Sudoku-with-A-star-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -105,6 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -160,18 +168,19 @@
       <workItem from="1555431803972" duration="3682000" />
       <workItem from="1555793883545" duration="693000" />
       <workItem from="1556309456046" duration="16356000" />
-      <workItem from="1556346122784" duration="1798000" />
+      <workItem from="1556346122784" duration="3268000" />
+      <workItem from="1556541691790" duration="1239000" />
+      <workItem from="1556642997217" duration="3689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25146000" />
+    <option name="totallyTimeSpent" value="31544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1550" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="545" y="61" width="210" height="645" id="Project" order="0" weight="0.17181209" />
+      <window_info content_ui="combo" x="545" y="61" width="210" height="645" id="Project" order="0" visible="true" weight="0.17142858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -180,16 +189,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32822478" />
-      <window_info anchor="bottom" x="22" y="512" width="1256" height="214" id="Run" order="2" weight="0.6781609" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974457" />
+      <window_info anchor="bottom" x="22" y="512" width="1256" height="214" id="Run" order="2" weight="0.49923196" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32822478" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32872504" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32950193" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -210,11 +219,11 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="335">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testaQuadrante#0;class#Node#0" />
+            <element signature="method#printCaminho#0;class#Node#0" />
+            <element signature="method#testeQuadrante#0;class#Node#0" />
             <element signature="method#testeColuna#0;class#Node#0" />
             <element signature="method#testeLinha#0;class#Node#0" />
             <element signature="method#adicionaElemento#0;class#Node#0" />
@@ -225,8 +234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="390">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>
