@@ -1,6 +1,5 @@
 package main;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Node {
@@ -13,6 +12,19 @@ public class Node {
     private final int n = 4;
 
     private boolean valida = true;
+
+    public void printCaminho() {
+        for (int i = 0; i < filhos.size() - 1; i++) {
+            int[][] matriz = filhos.get(i);
+            System.out.println();
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    System.out.print(matriz[j][k] + "\t");
+                }
+                System.out.println();
+            }
+        }
+    }
 
     public Node(int[][] tab) {
         this.tabuleiro = tab;
@@ -145,9 +157,13 @@ public class Node {
             }
         }
         try {
+
             matriz[linha][coluna] = elemento;
+            if (linha != -1 && coluna != -1) {
+                g++;
+                filhos.add(matriz);
+            }
         } catch (Exception e) {
-            this.h = -1;
             this.valida = false;
             return null;
         }
@@ -163,11 +179,8 @@ public class Node {
 
         int[][] pai = getTabuleiro();
         filhos.add(pai);
-        // se H que na nossa heuristica é a somatória da matriz for igual a 40, quer dizer que a matriz
-        //está completa
+
         while (h < 40 && valida) {
-
-
             h = 0;
             int[][] filho = new int[n][n];
 
@@ -176,7 +189,6 @@ public class Node {
                     filho[i][j] = pai[i][j];
                 }
             }
-
 
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
@@ -201,43 +213,23 @@ public class Node {
             if (um <= 4) {
                 filho = adicionaElemento(filho, 1);
                 um--;
-                filhos.add(filho);
-                g++;
             }
             if (dois <= 4 && filho != null) {
                 filho = adicionaElemento(filho, 2);
                 dois--;
-                filhos.add(filho);
-                g++;
             }
             if (tres <= 4 && filho != null) {
                 filho = adicionaElemento(filho, 3);
-                filhos.add(filho);
-                g++;
                 tres--;
             }
             if (quatro <= 4 && filho != null) {
                 filho = adicionaElemento(filho, 4);
-                filhos.add(filho);
-                g++;
                 quatro--;
             }
 
 
             if (filho != null) {
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < n; j++) {
-                        pai[i][j] = filho[i][j];
-                    }
-                }
-
-                System.out.println();
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < n; j++) {
-                        System.out.print(filho[i][j] + " ");
-                    }
-                    System.out.println();
-                }
+                pai = filho;
             }
 
         }

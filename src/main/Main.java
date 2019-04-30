@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         final int n = 4;
         Node geracao;
-        Node melhorNo = null;
+        Node melhorNo = new Node(null);
 
         ArrayList<Node> nos = new ArrayList();
         ArrayList<int[][]> menorCaminho = new ArrayList<>();
@@ -34,6 +34,8 @@ public class Main {
             }
         }
 
+        geracao = nos.get(5);
+        geracao.geraFilhos();
 
         for (int i = 0; i < nos.size() - 1; i++) {
             geracao = nos.get(i);
@@ -49,6 +51,7 @@ public class Main {
 
         System.out.println("MENOR CAMINHO COM " + menor + " NÓS");
         System.out.println("GERAÇÃO " + menorID);
+        melhorNo.printCaminho();
 
     }
 }
