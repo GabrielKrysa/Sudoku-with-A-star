@@ -1,54 +1,24 @@
 package main;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        final int n = 4;
-        Node geracao;
-        Node melhorNo = null;
+        ProblemaSudoku problema = new ProblemaSudoku();
+        Movimento resultado = null;
 
-        ArrayList<Node> nos = new ArrayList();
-        ArrayList<int[][]> menorCaminho = new ArrayList<>();
-        int[][] aux;
-
-        int menor = Integer.MAX_VALUE;
-        int menorID = -1;
+        long initTime = System.currentTimeMillis();
+        resultado = IA.buscaEmLArgura(problema);
 
 
-        for (int l = 0; l < n; l++) {
-            for (int i = 0; i < n * n; i++) {
-                aux = new int[n][n];
-
-                for (int j = 0; j < n; j++) {
-                    for (int k = 0; k < n; k++) {
-                        aux[j][k] = 0;
-                    }
-                }
-
-                int coluna = i % n;
-                int linha = i / n;
-
-                aux[linha][coluna] = l;
-                nos.add(new Node(aux));
-            }
+        while (resultado != null) {
+            resultado.printMatriz();
+            resultado = resultado.pai;
         }
 
+        long endTime = System.currentTimeMillis();
+        long totalMS = endTime - initTime;
 
-        for (int i = 0; i < nos.size() - 1; i++) {
-            geracao = nos.get(i);
-            geracao.geraFilhos();
-            if (geracao.isValida()) {
-                if (geracao.getG() < menor) {
-                    menor = geracao.getG() + 1;
-                    menorID = i;
-                    melhorNo = geracao;
-                }
-            }
-        }
+        System.out.println("TEMPO DECORRIDO " + totalMS + "MS, E "+ IA.estads + " NÓS CRIADOS");
 
-        System.out.println("MENOR CAMINHO COM " + menor + " NÓS");
-        System.out.println("GERAÇÃO " + menorID);
 
     }
 }
